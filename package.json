@@ -1,6 +1,6 @@
 {
   "name": "svelte-tailwind-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/TABmk/svelte-tailwind-boilerplate.git",
   "author": "TAB_mk <tabmk.contact[at]gmail.com>",
   "license": "MIT",
@@ -14,8 +14,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@ethercorps/sveltekit-og": "^3.0.0",
-    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/adapter-static": "^3.0.4",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tailwindcss/typography": "^0.5.13",
@@ -37,5 +36,6 @@
     "typescript-eslint": "^8.0.0-alpha.20",
     "vite": "^5.0.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {}
 }
