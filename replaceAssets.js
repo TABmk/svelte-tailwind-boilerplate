@@ -11,13 +11,13 @@ const readDirRecursive = async (filePath) => {
   return files.flat();
 }
 
-const files = await readDirRecursive('./build');
+const files = await readDirRecursive('./dist');
 Array.from(files).forEach((file) => {
   if (!(file.endsWith('.js') || file.endsWith('.html') || file.endsWith('.map') || file.endsWith('.css'))) {
     return;
   }
   fs.readFile(file, 'utf8', (err, data) => {
-    fs.writeFile(file, data.replace(/http:\/\/hacked_asset_path/g, '.').replace("\"/hacked_base_path\"", "document.location.pathname"), 'utf8', () => {
+    fs.writeFile(file, data.replace(/http:\/\/static_asset_path/g, '.').replace("\"/static_base_path\"", "document.location.pathname"), 'utf8', () => {
       console.log("Wrote file '" + file + "'");
     })
   });

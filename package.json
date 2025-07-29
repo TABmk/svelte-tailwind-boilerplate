@@ -1,11 +1,11 @@
 {
   "name": "svelte-tailwind-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/TABmk/svelte-tailwind-boilerplate.git",
   "author": "TAB_mk <tabmk.contact[at]gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "MODE=dev vite dev --host",
     "build": "vite build && node ./replaceAssets.js",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
