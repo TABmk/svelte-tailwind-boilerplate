@@ -1,0 +1,87 @@
+:root {
+  --vw-base: 320;
+  --vw-unit: 100lvw;
+}
+
+@media (min-width: 1366px) {
+  :root {
+    --vw-base: 1920;
+    --vw-unit: 100vw;
+  }
+}
+
+@utility text-vw-* {
+  font-size: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility gap-vw-* {
+  gap: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility rounded-vw-* {
+  border-radius: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility bottom-vw-* {
+  bottom: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility h-vw-* {
+  height: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility w-vw-* {
+  width: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility max-w-vw-* {
+  max-width: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility mt-vw-* {
+  margin-top: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility mb-vw-* {
+  margin-bottom: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility translate-y-vw-* {
+  --tw-translate-y: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+@utility ml-vw-* {
+  margin-left: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility mr-vw-* {
+  margin-right: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility px-vw-* {
+  padding-inline: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility py-vw-* {
+  padding-block: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility pt-vw-* {
+  padding-top: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility pb-vw-* {
+  padding-bottom: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility pr-vw-* {
+  padding-right: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility pl-vw-* {
+  padding-left: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility top-vw-* {
+  top: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility p-vw-* {
+  padding: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility right-vw-* {
+  right: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility left-vw-* {
+  left: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+
+@utility m-vw-* {
+  margin: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}
+@utility leading-vw-* {
+  --tw-leading: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+  line-height: calc((--value([number]) / var(--vw-base)) * var(--vw-unit));
+}

@@ -1,3 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin "daisyui";
+
+@import "$lib/css/fonts.css";
+@import "$lib/css/utils.css";
+@import "$lib/css/vw.css";
+
+@theme {
+  --font-aeroport: "SomeFont", sans-serif;
+
+  --breakpoint-desktop: 1024px;
+  --breakpoint-tablet: 768px;
+
+  --height-screen-dynamic: calc(var(--vh, 1vh) * 100);
+  --min-height-screen-dynamic: calc(var(--vh, 1vh) * 100);
+
+  --color-custom-red: #E80020;
+}

@@ -17,7 +17,7 @@ Array.from(files).forEach((file) => {
     return;
   }
   fs.readFile(file, 'utf8', (err, data) => {
-    fs.writeFile(file, data.replace(/http:\/\/hacked_asset_path/g, '.').replace("\"/hacked_base_path\"", "document.location.pathname"), 'utf8', () => {
+    fs.writeFile(file, data.replace(/http:\/\/static_asset_path/g, '.').replace("\"/static_base_path\"", "document.location.pathname"), 'utf8', () => {
       console.log("Wrote file '" + file + "'");
     })
   });
